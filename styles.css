@@ -1,0 +1,48 @@
+@font-face {
+    font-family: VCR_OSD;
+    src: url(fonts/VCR_OSD.ttf);
+}
+
+body {
+    background: url(VHS/b6fe0c5fd3c211e729aabeca0597fa0e.gif);
+}
+
+.cursor-vhs {
+    cursor: url(Images/vhs.png), auto;
+}
+
+header{
+    max-width: 1440px;
+    display: flex;
+    place-content: end;
+    margin-top: 8em;
+    font-size: 1.4em;
+    font-family: VCR_OSD;
+}
+
+main {
+    display: grid;
+    place-items: center;
+    align-self: center;
+    min-height: 100vh;
+    max-width: 1280px;
+}
+
+.nav-container {
+    flex-wrap: wrap;
+    width: 6%;
+    text-align: right;
+}
+
+.nav-content {
+    top: 0;
+    right: 10%;
+}
+
+.nav-content a {
+    color: #909090;
+    text-decoration: none;
+    text-shadow: -2px -1px 2px  #59e1ffa4, 2px 1px 2px #AB0B0B;
+    text-align: right;
+    flex-basis: 10%;
+}
