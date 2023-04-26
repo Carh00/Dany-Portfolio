@@ -5,6 +5,7 @@
 
 body {
     background: url(VHS/b6fe0c5fd3c211e729aabeca0597fa0e.gif);
+    overflow-x: hidden;
 }
 a {
     text-decoration: none;
@@ -36,6 +37,7 @@ header{
     font-size: 1.4em;
     font-family: VCR_OSD;
     margin-bottom: 5em;
+    color: #b1afaf;
 }
 
 main {
@@ -64,7 +66,7 @@ main {
 .show  {
     opacity: 1;
     filter: blur(.5px);
-    transform: translateX(0);
+    transform: translateX(1.5%);
 }
 
 span {
@@ -82,7 +84,7 @@ span:hover {
     flex-wrap: wrap;
     width: 6%;
     line-height: 2em;
-    margin-bottom: 3em;
+    margin-bottom: 5em;
 }
 
 .nav-content a {
@@ -108,4 +110,59 @@ span:hover {
     text-decoration: none;
     text-shadow: -2px -1px 2px  #59e1ffa4, 2px 1px 2px #AB0B0B;
 
+}
+
+/* ^^ All the information for css that can be used on most pages ^^ */
+
+
+/* underneath is changing backgrounds for each page */
+
+/* Songs Page */
+.background3 img {
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 20%;
+}
+
+/* Contact Page */
+.background4 img {
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 20%;
+}
+
+/* About-me Page */
+.background5 img { 
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 55%;
+}
+
+
+/* Songs Page BELOW */
+
+.text1 h2 {
+    margin-top: 2em;
+}
+
+.song {
+    text-decoration: none;
+    list-style:decimal-leading-zero;
+    line-height: 2.3em;
+    text-align: left;
+}
+
+/* About Page BELOW */
+
+.about-text div {
+    line-height: 2.15em;
 }
