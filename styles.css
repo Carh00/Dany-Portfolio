@@ -30,15 +30,15 @@ a {
 }
 
 header{
-    max-width: 1440px;
+    max-width: 1280px;
     display: flex;
-    place-content: start;
-    margin-top: 8em;
     font-size: 1.4em;
     font-family: VCR_OSD;
-    margin-bottom: 5em;
     color: #b1afaf;
+    margin: 0 auto;
+    margin-top: 5em;
 }
+
 
 main {
     display: grid;
@@ -48,7 +48,6 @@ main {
     text-shadow: -2px -1px 2px  #59e1ffa4, 2px 1px 2px #AB0B0B;
     justify-content: center;
     align-items: center;
-    margin-top: 5em;
     margin: 0 auto;
     font-size: 3em;
 }
@@ -62,16 +61,38 @@ main {
     transition: all 1.1s;
 }
 
-
 .show  {
     opacity: 1;
     filter: blur(.5px);
-    transform: translateX(1.5%);
+    transform: translateX(0%);
 }
 
 span {
     color: #edebeb;
     transition: 100ms ease;
+}
+
+
+
+.hidden:hover {
+    background: url(VHS/glitch2.gif);
+    padding: 4px;
+}
+
+.carttag {
+    padding: 4px;
+    background: url(VHS/glitch2.gif);
+}
+.skatingtag {
+    transition: 100ms ease;
+}
+
+.skatingtag:hover { transition: 100ms ease;
+    background: url(VHS/tv-static-rainbow-no-signal-6mhyvkjmqa3c4leq.gif);
+    object-fit: cover;
+    object-position: center;
+    color: white;
+   
 }
 
 span:hover {
@@ -81,10 +102,12 @@ span:hover {
 }
 
 .nav-container {
-    flex-wrap: wrap;
-    width: 6%;
-    line-height: 2em;
-    margin-bottom: 5em;
+    line-height: 1.7em;
+    margin-bottom: 2em;
+    max-width: 1440px;
+    width: 50;
+    display: flex;
+    /* margin: 0 auto; */
 }
 
 .nav-content a {
@@ -98,18 +121,10 @@ span:hover {
     color: white;
 }
 
-
-.nav-content {
-    position: absolute;
-    top: 0;
-    left: 370px;
-}
-
 .nav-content a {
     color: #909090;
     text-decoration: none;
     text-shadow: -2px -1px 2px  #59e1ffa4, 2px 1px 2px #AB0B0B;
-
 }
 
 /* ^^ All the information for css that can be used on most pages ^^ */
@@ -158,7 +173,16 @@ span:hover {
     text-decoration: none;
     list-style:decimal-leading-zero;
     line-height: 2.3em;
-    text-align: left;
+    text-align: center;
+}
+
+.song-list li {
+    list-style: decimal-leading-zero;
+}
+
+.song-list li:hover {
+    background: url(VHS/glitch2.gif);
+    opacity: 45%;
 }
 
 /* About Page BELOW */

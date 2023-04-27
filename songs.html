@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,43 +9,55 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/x-icon" href="Images/smoking-anime.gif">
 </head>
+
 <body class="cursor-vhs">
     <embed name="GoodEnough" src="/music/good_enough.mp3" loop="false" hidden="true" autostart="true">
     <div class="background3">
-      <img src="Images/e8e6961c2c21d68db26220cf431cd392.gif" alt="">
-    <header>
-       <nav class="nav-container home-info">
-            <div class="nav-content">
-                <a href="index.html">PLAY</a> <br>
-                <a href="resume.html">Resume</a> <br>
-                <a href="about.html">About Me</a>
-                <a href="plans.html">Plans</a>
-                <a href="achievements.html">Achievements</a>
-            </div>
-        </nav> 
-    </header>
-    <main>
-        <section class="home-info">
-            <div class="text1">
-                <h2>Songs To Help Work 🎵:</h2>
-            </div>
-            <div class="song-container home-info">
-                <ul class="song-list">
-                    <li class="song home-info">Here with me - D4vd</li>
-                    <li class="song home-info">Sleep well - D4vd</li>
-                    <li class="song home-info">Past - Half Asleep Games</li>
-                    <li class="song home-info">Romantic Homicide - D4vd</li>
-                    <li class="song home-info">Hydrocodone - Cuco</li>
-                    <li class="song home-info">Freaks - Surf Curse</li>
-                    <li class="song home-info">The Moon Song - Oscar Lang</li>
-                    <li class="song home-info">Gimme Love - Joji</li>
-                    <li class="song home-info">Like you do - Joji</li>
-                </ul>
-            </div>
+        <img src="Images/e8e6961c2c21d68db26220cf431cd392.gif" alt="">
+        <header>
+            <nav class="nav-container home-info">
+                <div class="nav-content">
+                    <a href="index.html">PLAY</a> <br>
+                    <a href="resume.html">Resume</a> <br>
+                    <a href="about.html">About Me</a> <br>
+                    <a href="plans.html">Plans</a> <br>
+                    <a href="achievements.html">Achievements</a> <br>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section class="home-info">
+                <div class="text1">
+                    <h2>Songs To Help Work 🎵:</h2>
+                </div>
+                <div class="song-container home-info">
+                    <ul class="song-list">
+                        <li id="song" class="song home-info" onmouseover="play()" onmouseout="stop()">Here with me -D4vd
+                            ▶</li>
+                        <audio loop id="audio" src="songs/here with me.mp3"></audio>
 
-        </section>
-    </main>
-</div>
+                        <li class="song home-info" onmouseover="play1()" onmouseout="stop1()">Sleep well - D4vd ▶</li>
+                        <audio loop id="audio1"
+                            src="songs/onlymp3.to - Sleep Well-8d1gashnYIk-256k-1654169773316.mp3"></audio>
+
+                        <li class="song home-info" onmouseover="play2()" onmouseout="stop2()">Past - Half Asleep Games ▶
+                        </li>
+                        <audio loop id="audio2"
+                            src="songs/onlymp3.to - Past-bRQ9jn6abrA-256k-1658103945055.mp3"></audio>
+
+                        <li class="song home-info">Romantic Homicide - D4vd ▶</li>
+                        <li class="song home-info">Hydrocodone - Cuco ▶</li>
+                        <li class="song home-info">Freaks - Surf Curse ▶</li>
+                        <li class="song home-info">The Moon Song - Oscar Lang ▶</li>
+                        <li class="song home-info">Gimme Love - Joji ▶</li>
+                        <li class="song home-info">Like you do - Joji ▶</li>
+                    </ul>
+                </div>
+
+            </section>
+        </main>
+    </div>
     <script src="app.js"></script>
 </body>
+
 </html>
