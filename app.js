@@ -57,3 +57,58 @@ function stop2() {
     audio2.pause();
     audio2.currentTime = 0;
 }
+
+// romantic homicide 
+
+function play3() {
+    const song2 = document.getElementById('audio3');
+    song2.play()
+}
+
+function stop3() {
+    const audio2 = document.getElementById('audio3');
+    audio2.pause();
+    audio2.currentTime = 0;
+}
+
+// Hydrocodone 
+
+function play4() {
+    const song2 = document.getElementById('audio4');
+    song2.play()
+}
+
+function stop4() {
+    const audio2 = document.getElementById('audio4');
+    audio2.pause();
+    audio2.currentTime = 0;
+}
+
+// Freaks
+
+function play5() {
+    const song2 = document.getElementById('audio5');
+    song2.play()
+}
+
+function stop5() {
+    const audio2 = document.getElementById('audio5');
+    audio2.pause();
+    audio2.currentTime = 0;
+}
+
+// change image function
+
+function change() {
+    const image = document.getElementById('fade-image');
+    image.src = "Images/here.png"
+    {
+        intervalID=setInterval(show,20);
+    }
+}
+
+function unchange() {
+    const gone = document.getElementById('fade-image');
+    gone.src = "Images/e8e6961c2c21d68db26220cf431cd392.gif";
+}
+

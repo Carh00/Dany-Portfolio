@@ -162,7 +162,18 @@ span:hover {
     opacity: 55%;
 }
 
+.background6 img {
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 55%;
+}
 
+.about-text div {
+    line-height: 2.15em;
+}
 /* Songs Page BELOW */
 
 .text1 h2 {
@@ -185,8 +196,26 @@ span:hover {
     opacity: 45%;
 }
 
-/* About Page BELOW */
+/* Achievements BELOW */
 
-.about-text div {
-    line-height: 2.15em;
+.achievements-text1,
+.achievements-text2,
+.achievements-text3,
+.achievements-text4  {
+    line-height: 2em;
+}
+
+/* Plans Page BELOW */
+
+.plans-text1,
+.plans-text2,
+.plans-text3,
+.plans-text4 {
+    line-height: 2em;
+}
+
+/* Projects Page BELOW */
+
+.title-header h2 {
+    font-size: .8em;
 }
