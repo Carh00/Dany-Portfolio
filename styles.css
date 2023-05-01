@@ -3,7 +3,7 @@
     src: url(fonts/VCR_OSD.ttf);
 }
 
-body {
+.cursor-vhs {
     background: url(VHS/b6fe0c5fd3c211e729aabeca0597fa0e.gif);
     overflow-x: hidden;
 }
@@ -171,6 +171,16 @@ span:hover {
     opacity: 55%;
 }
 
+.background7 img {
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 40%;
+    z-index: -1;
+}
+
 .about-text div {
     line-height: 2.15em;
 }
@@ -216,6 +226,106 @@ span:hover {
 
 /* Projects Page BELOW */
 
+.projmain p {
+    color: white;
+}
+
 .title-header h2 {
     font-size: .8em;
 }
+
+.hola {
+    color:#b1afaf;
+    font-family: VCR_OSD;
+    text-shadow: -2px -1px 2px  #59e1ffa4, 2px 1px 2px #AB0B0B;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 1.1em;
+    max-width: 75%;
+    
+}
+
+.row1 {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 15em;
+}
+
+.row2 {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 15em;
+}
+
+.row1 img,
+.row2 img {
+    opacity: 99%;
+    transition: 50ms ease;
+    box-shadow: -4px -3px 2px  #59e1ff4e, 2px 1px 5px #ab0b0b9e;
+    border-radius: 2em;
+}
+
+.row1 img:hover,
+.row2 img:hover {
+    opacity: 60%;
+    transform: scale(.9);
+}
+
+
+/* Resume Page */
+
+.resume {
+    color: black;
+    max-width: 1440px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.heading h1{
+    align-items: center;
+    display: flex;
+    font-size: 2.4em;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 2em;
+}
+
+.breaking-mark {
+    color: black;
+    height: 2px;
+    background-color: rgba(0, 0, 0, 0.662);
+}
+
+.resume-content {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 2.5em;
+    font-size: 18px;
+}
+
+.resume-info6 {
+    margin-bottom: 6em;
+}
+
+.CHJS {
+    color: rgb(17, 114, 251)
+}
+
+.CHJS:hover {
+    text-decoration: underline;
+}
+
+.contact-me {
+    list-style: none;
+    display: inline;
+    margin-top: 0;
+}
+
+.holder {
+  
+    margin-bottom: 2em;
+}
+
