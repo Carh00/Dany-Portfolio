@@ -97,6 +97,46 @@ function stop5() {
     audio2.currentTime = 0;
 }
 
+
+// the moon song 
+
+function play6() {
+    const song2 = document.getElementById('audio6');
+    song2.play()
+}
+
+function stop6() {
+    const audio2 = document.getElementById('audio6');
+    audio2.pause();
+    audio2.currentTime = 0;
+}
+
+// gimmi love
+
+function play7() {
+    const song2 = document.getElementById('audio7');
+    song2.play()
+}
+
+function stop7() {
+    const audio2 = document.getElementById('audio7');
+    audio2.pause();
+    audio2.currentTime = 0;
+}
+
+// Like you do 
+
+function play8() {
+    const song2 = document.getElementById('audio8');
+    song2.play()
+}
+
+function stop8() {
+    const audio2 = document.getElementById('audio8');
+    audio2.pause();
+    audio2.currentTime = 0;
+}
+
 // change image function
 
 function change() {
@@ -112,3 +152,12 @@ function unchange() {
     gone.src = "Images/e8e6961c2c21d68db26220cf431cd392.gif";
 }
 
+
+
+// projects page bellow
+
+document.addEventListener( 'DOMContentLoaded', function () {
+    new Splide( '#image-carousel' ).mount();
+  } );
+
+  new Splide( '#image-carousel' ).mount();

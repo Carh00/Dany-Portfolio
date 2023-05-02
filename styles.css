@@ -21,7 +21,7 @@ a {
     position: absolute;
     top: 0;
     left: 0;
-    height: 1700px;
+    height: 1760px;
     z-index: -1;
 }
 
@@ -38,6 +38,7 @@ header{
     margin: 0 auto;
     margin-top: 5em;
 }
+
 
 
 main {
@@ -63,7 +64,7 @@ main {
 
 .show  {
     opacity: 1;
-    filter: blur(.5px);
+    filter: blur(0px);
     transform: translateX(0%);
 }
 
@@ -127,6 +128,37 @@ span:hover {
     text-shadow: -2px -1px 2px  #59e1ffa4, 2px 1px 2px #AB0B0B;
 }
 
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: url(VHS/giphy.gif);
+    min-width: 160px;
+    z-index: 1;
+    font-size: 25px;
+    text-align: center;
+    transition: 100ms ease;
+    width: 100%;
+}
+
+.dropdown-content a:hover {
+    background: url(VHS/glitch2.gif);
+}
+  
+.dropdown-content a {
+    padding: 5px 8px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+
 /* ^^ All the information for css that can be used on most pages ^^ */
 
 
@@ -181,11 +213,30 @@ span:hover {
     z-index: -1;
 }
 
+.background8 img {
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 40%;
+    z-index: -1;
+}
+
 .about-text div {
     line-height: 2.15em;
 }
 /* Songs Page BELOW */
 
+@keyframes songs {
+    from {
+        color: white;
+    }
+    to {
+        color: black;
+    }
+    
+}
 .text1 h2 {
     margin-top: 2em;
 }
@@ -195,6 +246,9 @@ span:hover {
     list-style:decimal-leading-zero;
     line-height: 2.3em;
     text-align: center;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-name: songs;
 }
 
 .song-list li {
@@ -246,7 +300,11 @@ span:hover {
     
 }
 
-.row1 {
+.splide__slide img {
+    width: 100%;
+    height: auto;
+  }
+/* .row1 {
     display: flex;
     justify-content: space-between;
     max-width: 1280px;
@@ -274,7 +332,7 @@ span:hover {
 .row2 img:hover {
     opacity: 60%;
     transform: scale(.9);
-}
+} */
 
 
 /* Resume Page */
