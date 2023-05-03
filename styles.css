@@ -12,6 +12,22 @@ a {
     color: #edebeb;
 }
 
+.home-info {
+    animation-duration: .05s;
+   animation-name: textflicker;
+   animation-iteration-count: infinite;
+   animation-direction:alternate;
+}
+
+@keyframes textflicker {
+    from {
+      text-shadow: -1.5px -1px 2px  #59e1ff;
+    }
+    to {
+      text-shadow: 2px 1px 2px #ab0b0b7f;
+    }
+  }
+
 .background2 img {
     opacity: 20%;
     width: 100%;;
@@ -71,9 +87,31 @@ main {
 span {
     color: #edebeb;
     transition: 100ms ease;
+    animation-duration: 0.01s;
+    animation-name: textflicker;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
+.danny {
+    animation-name: span;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+    animation-direction: alternate;
+}
 
+@keyframes span {
+    0% {
+        color: rgb(216, 184, 207);
+    }
+    50% {
+        color: rgb(198, 167, 227);
+    }
+    100% {
+        color: rgb(204, 165, 172);
+    }
+}
 
 .hidden:hover {
     background: url(VHS/glitch2.gif);
@@ -88,12 +126,28 @@ span {
     transition: 100ms ease;
 }
 
-.skatingtag:hover { transition: 100ms ease;
+.skatingtag:hover { 
     background: url(VHS/tv-static-rainbow-no-signal-6mhyvkjmqa3c4leq.gif);
     object-fit: cover;
     object-position: center;
     color: white;
-   
+    animation-name: skate;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes skate {
+    0% {
+        width: 100%;
+        background-color: pink;
+    }
+    50% {
+        width: 50%;
+    }
+    0% {
+        width: 0%;
+    }
 }
 
 span:hover {
@@ -113,6 +167,10 @@ span:hover {
 
 .nav-content a {
     font-size: 1.25em;
+    animation-duration: .05s;
+   animation-name: textflicker;
+   animation-iteration-count: infinite;
+   animation-direction:alternate;
 }
 
 .nav-content a:hover {
@@ -132,7 +190,6 @@ span:hover {
     position: relative;
     display: inline-block;
   }
-  
 
 .dropdown-content {
     display: none;
@@ -144,6 +201,10 @@ span:hover {
     text-align: center;
     transition: 100ms ease;
     width: 100%;
+    animation-duration: .05s;
+    animation-name: textflicker;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
 }
 
 .dropdown-content a:hover {
@@ -228,15 +289,6 @@ span:hover {
 }
 /* Songs Page BELOW */
 
-@keyframes songs {
-    from {
-        color: white;
-    }
-    to {
-        color: black;
-    }
-    
-}
 .text1 h2 {
     margin-top: 2em;
 }
@@ -246,9 +298,6 @@ span:hover {
     list-style:decimal-leading-zero;
     line-height: 2.3em;
     text-align: center;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
-    animation-name: songs;
 }
 
 .song-list li {
@@ -387,3 +436,92 @@ span:hover {
     margin-bottom: 2em;
 }
 
+/* Forms page BELOW */
+
+.form-content {
+    width: 600px;
+    background-color: rgba(57, 57, 57, 0.51);
+    padding: 40px 20px;
+    box-sizing: border-box;
+    margin-bottom: 2em;
+}
+
+.form-content h1 {
+    text-align: center;
+}
+
+.form-content input,
+.form-content textarea,
+.form-content button {
+    width: 100%;
+    background: none;
+    font-family: VCR_OSD;
+    border: 2px solid black;
+    padding: 1.1em;
+    color: #b1afaf;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    font-size: 17px;
+}
+
+
+#btn {
+    background-color: #636363;
+    cursor: pointer;
+}
+
+#btn:hover{
+    background-color: #535353;
+    cursor: pointer;
+    transition: 100ms ease;
+}
+
+textarea {
+    resize: none;
+    margin-top: 25px;
+}
+
+/* Contacts page BELOW */
+
+[class^='socials'] a:hover {
+    color: rgb(144, 144, 144);
+}
+.social-cont {
+    max-width: 1280px;
+    font-size: 30px;
+}
+
+.socials-twitter {
+    color: rgb(212, 56, 56);
+}
+
+.socials-github {
+    color: rgb(233, 91, 48);
+}
+
+.socials-instagram {
+    color: rgb(205, 116, 56);
+}
+
+.socials-email {
+    color: rgb(205, 166, 60);
+}
+
+i:hover {
+    animation-name: icon;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes icon {
+    0% {
+        transform: translateX(-10000%);
+    }
+    50% {
+        transform: translatex(-50%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
