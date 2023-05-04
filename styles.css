@@ -337,52 +337,6 @@ span:hover {
     font-size: .8em;
 }
 
-.hola {
-    color:#b1afaf;
-    font-family: VCR_OSD;
-    text-shadow: -2px -1px 2px  #59e1ffa4, 2px 1px 2px #AB0B0B;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    font-size: 1.1em;
-    max-width: 75%;
-    
-}
-
-.splide__slide img {
-    width: 100%;
-    height: auto;
-  }
-/* .row1 {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1280px;
-    margin: 0 auto;
-    margin-bottom: 15em;
-}
-
-.row2 {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1280px;
-    margin: 0 auto;
-    margin-bottom: 15em;
-}
-
-.row1 img,
-.row2 img {
-    opacity: 99%;
-    transition: 50ms ease;
-    box-shadow: -4px -3px 2px  #59e1ff4e, 2px 1px 5px #ab0b0b9e;
-    border-radius: 2em;
-}
-
-.row1 img:hover,
-.row2 img:hover {
-    opacity: 60%;
-    transform: scale(.9);
-} */
-
 
 /* Resume Page */
 
