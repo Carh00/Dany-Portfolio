@@ -137,6 +137,19 @@ function stop8() {
     audio2.currentTime = 0;
 }
 
+// Golden Hour
+
+function play9() {
+    const song2 = document.getElementById('audio9');
+    song2.play()
+}
+
+function stop9() {
+    const audio2 = document.getElementById('audio9');
+    audio2.pause();
+    audio2.currentTime = 0;
+}
+
 // change image function
 
 function change() {
