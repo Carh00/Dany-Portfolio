@@ -98,7 +98,7 @@ function stop5() {
 }
 
 
-// the moon song 
+// The moon song 
 
 function play6() {
     const song2 = document.getElementById('audio6');
@@ -111,7 +111,7 @@ function stop6() {
     audio2.currentTime = 0;
 }
 
-// gimmi love
+// Gimmi love
 
 function play7() {
     const song2 = document.getElementById('audio7');
