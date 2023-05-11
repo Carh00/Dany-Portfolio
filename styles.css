@@ -245,6 +245,7 @@ span:hover {
     opacity: 20%;
 }
 
+
 /* About-me Page */
 .background5 img { 
     position: fixed; 
@@ -524,7 +525,7 @@ textarea {
     color: rgb(205, 166, 60);
 }
 
-i:hover {
+/* i:hover {
     animation-name: icon;
     animation-duration: 4s;
     animation-iteration-count: infinite;
@@ -541,7 +542,7 @@ i:hover {
     100% {
         transform: translateX(0%);
     }
-}
+} */
 
 /* @media for mobile (~480px and 1024px) */
 
@@ -817,4 +818,55 @@ i:hover {
         object-fit: cover;
         object-position: center;
     }
+}
+
+/* screen animation transition */
+
+.loader-wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+
+.fresh {
+visibility: show;
+}
+
+.loader {
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    position: relative;
+    border: 6px solid white;
+    animation: loader 2s infinite ease;
+}
+
+.loader-inner {
+    vertical-align: top;
+    display: inline-block;
+    width: 100%;
+    background-color:white;
+    animation: loading 1s infinite ease-in;
+}
+
+@keyframes loader {
+    0% {transform: rotate(0deg);}
+    25% {transform: rotate(180deg);}
+    50% {transform: rotate(180deg);}
+    75% {transform: rotate(360deg);}
+    100% {transform: rotate(360deg);}
+}
+
+@keyframes loading {
+    0% {transform: translateX(-100px);}
+    25% {transform: translateX(-50px);}
+    50% {transform: translateX(-25px);}
+    75% {transform: translateX(0px);;}
+    100% {transform: translateX(100px);}
 }

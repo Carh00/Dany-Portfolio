@@ -17,7 +17,6 @@ hiddenElements.forEach((el) => observer.observe(el));
 
 // Text slide in sensor ^^
 
-
 //Music for songs page 
 
 // Here with me 
@@ -165,8 +164,6 @@ function unchange() {
     gone.src = "Images/e8e6961c2c21d68db26220cf431cd392.gif";
 }
 
-
-
 // projects page bellow
 
 document.addEventListener( 'DOMContentLoaded', function () {
@@ -174,3 +171,69 @@ document.addEventListener( 'DOMContentLoaded', function () {
   } );
 
   new Splide( '#image-carousel' ).mount();
+
+  function load(url) {
+    // display loading image here...
+    document.getElementById('loadingImg').visible = true;
+    // request your data...
+    var req = new XMLHttpRequest();
+    req.open("POST", url, true);
+
+    req.onreadystatechange = function () {
+        if (req.readyState == 4 && req.status == 200) {
+            // content is loaded...hide the gif and display the content...
+            if (req.responseText) {
+                document.getElementById('content').innerHTML = req.responseText;
+                document.getElementById('loadingImg').visible = false;
+            }
+        }
+    };
+    request.send(vars);
+}
+
+function refresh() {
+    const loading = document.getElementsByClassName('.loader-wrapper')
+    loading.addEventListener("load", (hello) => {
+        loading.classList.add('fresh')
+    })
+}
+
+
+// const loaderContainer = document.querySelector('.loader-wrapper');
+
+// window.addEventListener('load', () => {
+//     loaderContainer.style.display = 'none';
+// });
+
+// window.addEventListener('load', () => {
+//     loaderContainer.classList.add('loader-wrapper-hidden');
+// });
+
+// window.addEventListener('load', () => {
+//     loaderContainer.parentElement.removeChild(loaderContainer);
+// });
+
+// const displayLoading = () => {
+//     loaderContainer.style.display = 'block';
+// };
+
+// const hideLoading = () => {
+//     loaderContainer.style.display = 'none';
+// };
+
+// getQuoteBtn.addEventListener('click', () => {
+//     displayLoading();
+//     fetch('https://api.quotable.io/random')
+//         .then((response) => {
+//             return response.json();
+//         })
+//         .then((data) => {
+//             hideLoading();
+//             const quote = document.querySelector('.quote');
+//             const author = document.querySelector('.author');
+//             quote.innerHTML = data.content;
+//             author.innerHTML = data.author;
+//         });
+// });
+
+// const getQuoteBtn = document.querySelector('.get-quote');
