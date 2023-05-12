@@ -501,6 +501,10 @@ textarea {
 
 /* Contacts page BELOW */
 
+.contact-container {
+    margin-bottom: 2em;
+}
+
 [class^='socials'] a:hover {
     color: rgb(144, 144, 144);
 }
@@ -511,18 +515,72 @@ textarea {
 
 .socials-twitter {
     color: rgb(212, 56, 56);
+    animation-name: spin;
+    animation-duration: 1s;
+    animation-direction: normal;
+}
+
+.socials-twitter a {
+    color: #b1afaf;
+}
+
+.socials-twitter a:hover {
+    color: #ffffff;
 }
 
 .socials-github {
     color: rgb(233, 91, 48);
+    animation-name: spin;
+    animation-duration: 1.5s;
+    animation-direction: normal;
+}
+
+.socials-github a {
+    color: #b1afaf;
+}
+
+.socials-github a:hover {
+    color: #ffffff;
 }
 
 .socials-instagram {
     color: rgb(205, 116, 56);
+    animation-name: spin;
+    animation-duration: 2s;
+    animation-direction: normal;
+}
+
+.socials-instagram a {
+    color: #b1afaf;
+}
+
+.socials-instagram a:hover{
+    color: rgb(255, 255, 255);
 }
 
 .socials-email {
     color: rgb(205, 166, 60);
+    animation-name: spin;
+    animation-duration: 2.5s;
+    animation-direction: normal;
+}
+
+.socials-email a {
+    color: #b1afaf;
+    
+}
+
+.socials-email a:hover {
+    color: rgb(255, 255, 255);
+    
+}
+
+@keyframes spin {
+    0% {transform: rotate(90deg); visibility: hidden; transition: 500ms ease;}
+    25% {transform: rotate(150deg); visibility: hidden; }
+    50% {transform: rotate(200deg); visibility: hidden;}
+    75% {transform: rotate(300deg);visibility: hidden; transition:500ms ease;}
+    100% {transform: rotate(360deg);visibility: show; transition: 500ms ease;}
 }
 
 /* i:hover {
@@ -551,6 +609,12 @@ textarea {
         max-width: 360px;
         font-size: 18px;
         line-height: 2em;
+    }
+
+    .wrapper {
+        width: 100%;
+        height: 550px;
+        margin-top: 1.1em;
     }
 
     .song-list li {
@@ -698,6 +762,12 @@ textarea {
 
     header {
         max-width: 720px;
+    }
+
+    .wrapper {
+        width: 100%;
+        height: 450px;
+        margin-top: 1.1em;
     }
 
     .dropdown-content {
