@@ -153,7 +153,7 @@ function stop9() {
 
 function change() {
     const image = document.getElementById('fade-image');
-    image.src = "Images/here.png"
+    image.src = "Images/Here With Me.jpg"
     {
         intervalID=setInterval(show,20);
     }
@@ -161,7 +161,7 @@ function change() {
 
 function unchange() {
     const gone = document.getElementById('fade-image');
-    gone.src = "Images/e8e6961c2c21d68db26220cf431cd392.gif";
+    gone.src = "Images/e8e6961c2c21d68db26220cf431cd392.jpg";
 }
 
 // projects page bellow
